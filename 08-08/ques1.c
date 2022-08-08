@@ -42,11 +42,24 @@ int main(){
 
     for(int i=0;i<n;i++){
         printf("\n");
-        printf("Employee Name : %s %s %s\n",s[i].n.fname,s[i].n.mname,s[i].n.lname);
-        printf("DOB : %d/%d/%d\n",s[i].d.dd,s[i].d.mm,s[i].d.yy);
-        printf("A/C NO : %d\n",s[i].ac_no);
-        printf("Balance : %d\n",s[i].balance);
-        printf("\n\n");
+        if(s[i].balance<200){
+            printf("Employee with less than 200");
+            printf("Employee Name : %s %s %s\n",s[i].n.fname,s[i].n.mname,s[i].n.lname);
+            printf("DOB : %d/%d/%d\n",s[i].d.dd,s[i].d.mm,s[i].d.yy);
+            printf("A/C NO : %d\n",s[i].ac_no);
+            printf("Balance : %d\n",s[i].balance);
+            printf("\n\n");
+        }
+        if(s[i].balance>1000){
+            s[i].balance+=100;
+            printf("Employee with more than 1000");
+            printf("Employee Name : %s %s %s\n",s[i].n.fname,s[i].n.mname,s[i].n.lname);
+            printf("DOB : %d/%d/%d\n",s[i].d.dd,s[i].d.mm,s[i].d.yy);
+            printf("A/C NO : %d\n",s[i].ac_no);
+            printf("Balance : %d\n",s[i].balance);
+            printf("\n\n");
+
+        }
     }
 
 
