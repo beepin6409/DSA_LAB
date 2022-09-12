@@ -24,10 +24,6 @@ void add(struct time t1,struct time t2,struct time result){
         result.minute-=60;
     }
     printf("ON adding two times we get %d hour %d minute and %d second",result.hour,result.minute,result.second);
-
-
-    
-
 }
 void subtract(struct time t1,struct time t2,struct time result){
     if(t1.second<t2.second){
