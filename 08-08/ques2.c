@@ -40,16 +40,13 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",(p+i));
     }
-    int a;
-    printf("Enter how many times you want to insert the element at any position ");
-    scanf("%d",&a);
-    for(int i=0;i<a;i++){
-        int pos,num;
-        printf("Enter the index and the element you want to insert : ");
-        scanf("%d%d",&pos,&num);
-        insertpos(n,p,pos,num);
-        n++;
-    }
+    
+    int pos,num;
+    printf("Enter the index and the element you want to insert : ");
+    scanf("%d%d",&pos,&num);
+    insertpos(n,p,pos,num);
+    n++;
+    
     //inserting at the beginning;
     int num2;
     printf("Enter the number that you wanna insert at the beginning ");
@@ -67,8 +64,5 @@ int main(){
     for(int i=0;i<n;i++){
         printf("%d ",*(p+i));
     }
-
-
-
     return 0;
 }
